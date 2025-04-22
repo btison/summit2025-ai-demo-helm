@@ -5,7 +5,7 @@ replicaCount: 1
 
 image:
   repository: quay.io/aidemosummit2025/finance-api
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: 3999abf
 
 podAnnotations: {}
