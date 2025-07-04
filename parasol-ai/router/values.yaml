@@ -92,5 +92,8 @@ kafka:
 
 llm:
   modelName:
-  apiKey:
-  baseUrl:
+  location:
+  project:
+
+vertexai:
+  secret: vertexai-gemini

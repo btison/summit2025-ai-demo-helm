@@ -30,6 +30,9 @@ spec:
             - name: http
               containerPort: {{ .Values.service.containerPort }}
               protocol: TCP
+          env:
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: /deployments/vertexai/vertexai
           livenessProbe:
             {{- toYaml .Values.livenessProbe | nindent 12 }}
           readinessProbe:
@@ -39,9 +42,14 @@ spec:
           volumeMounts:
             - mountPath: /deployments/config
               name: config
+            - mountPath: /deployments/vertexai
+              name: vertexai-credentials
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
       volumes:
         - name: config
           secret:
             secretName: {{ include "router.name" . }}
+        - name: vertexai-credentials
+          secret:
+            secretName: {{ .Values.vertexai.secret }}

@@ -1,0 +1,6 @@
+vertexai:
+  credentials:
+
+argocd:
+  enabled: true
+  syncwave: "-1"

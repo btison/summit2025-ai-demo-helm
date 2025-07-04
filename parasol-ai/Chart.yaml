@@ -32,3 +32,6 @@ dependencies:
   - name: moderation
     version: 0.1.0
     repository: file://moderation
+  - name: vertexai-gemini
+    version: 0.1.0
+    repository: file://vertexai-gemini
