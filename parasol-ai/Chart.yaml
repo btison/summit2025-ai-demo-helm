@@ -5,30 +5,30 @@ type: application
 version: 0.1.0
 
 dependencies:
-  - name: structure-message
-    version: 0.1.0
-    repository: file://structure-message
-  - name: customer-data
-    version: 0.1.0
-    repository: file://customer-data
-  - name: router
-    version: 0.1.0
-    repository: file://router
+  # - name: structure-message
+  #   version: 0.1.0
+  #   repository: file://structure-message
+  # - name: customer-data
+  #   version: 0.1.0
+  #   repository: file://customer-data
+  # - name: router
+  #   version: 0.1.0
+  #   repository: file://router
   - name: finance-mcp
     version: 0.1.0
     repository: file://finance-mcp
-  - name: finance-ai
-    version: 0.1.0
-    repository: file://finance-ai
-  - name: support-ai
-    version: 0.1.0
-    repository: file://support-ai
-  - name: website-mcp
-    version: 0.1.0
-    repository: file://website-mcp
-  - name: website-ai
-    version: 0.1.0
-    repository: file://website-ai
-  - name: moderation
-    version: 0.1.0
-    repository: file://moderation
+  # - name: finance-ai
+  #   version: 0.1.0
+  #   repository: file://finance-ai
+  # - name: support-ai
+  #   version: 0.1.0
+  #   repository: file://support-ai
+  # - name: website-mcp
+  #   version: 0.1.0
+  #   repository: file://website-mcp
+  # - name: website-ai
+  #   version: 0.1.0
+  #   repository: file://website-ai
+  # - name: moderation
+  #   version: 0.1.0
+  #   repository: file://moderation
